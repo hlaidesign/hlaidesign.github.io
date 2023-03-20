@@ -1,0 +1,243 @@
+@font-face {
+    font-family: "HK-Grotesk";
+    src: url("../fonts/HKGrotesk-Regular.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "HK-Grotesk";
+    font-weight: bold;
+    src: url("../fonts/HKGrotesk-Bold.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "HK-Grotesk";
+    font-weight: 300;
+    src: url("../fonts/HKGrotesk-Light.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "HK-Grotesk";
+    font-weight: 700;
+    src: url("../fonts/HKGrotesk-SemiBold.otf") format("opentype");
+  }
+  
+  html,
+  body {
+    font-family: "HK-Grotesk";
+    background-image: url("../img/white_plaster.png");
+    /* height: 100vh; */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  
+    box-sizing: border-box;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    /* margin: 32px 0; */
+    margin-top: 32px;
+    box-sizing: border-box;
+    min-width: 0;
+    max-width: 46rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 64px;
+    font-size: 1.4rem;
+}
+
+nav img {
+    height: 60px;
+    margin-right: 20px;
+}
+
+nav .link{
+    height: 32px;
+    margin-left: 20px;
+}
+
+nav .link :hover{
+    color: #857391;
+    cursor: pointer;
+}
+nav .spacer {
+    flex-grow: 1;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    font-family: "HK-Grotesk";
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+
+.main-content{
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    max-width: 46rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 128px;
+    /* font-size: 1.4rem; */
+}
+
+.main-content h2{
+    font-size: 2.0rem;
+}
+
+.main-content p{
+    font-size: 1.4rem;
+    margin: 32px 0;
+}
+
+.main-content button{
+    font-family: "HK-Grotesk";
+    background-color: #665075; 
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.main-content a :hover{
+    background-color: #857391;
+    cursor: pointer;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0;
+    min-width: 0;
+    max-width: 46rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 128px;
+    /* padding-bottom: 64px; */
+}
+
+.about img{
+    height: 270px;
+}
+
+.about .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+}
+
+
+.about p{
+    font-size: 1.2rem;
+    /* margin: 32px 0; */
+}
+
+.about h2{
+    margin: 0;
+}
+
+
+.work-history{
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    max-width: 46rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 128px;
+    padding-bottom: 128px;
+
+}
+
+.work-history a{
+    text-decoration: none;
+    color: black;
+    
+   
+}
+
+.work-history a :hover{
+    background-color: #DCDADD;
+    border-radius: 10px;
+    /* margin: -6px 0; */
+}
+
+.work-item{
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+    margin: 0 -15px;
+    padding: 12px 15px;
+}
+
+
+
+.work-item img{
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.work-names{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.work-names h3{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.work-names p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    opacity: 0.6;
+}
+
+.top-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.year{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 625px) {
+
+    .about .description{
+        width: 100%;
+    }
+
+    .about img{
+        margin: auto;
+        margin-bottom: 24px;
+    }
+}
