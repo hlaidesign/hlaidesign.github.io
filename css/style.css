@@ -98,7 +98,7 @@ nav button {
     margin: 32px 0;
 }
 
-.main-content button{
+.main-content .primary-btn{
     font-family: "HK-Grotesk";
     background-color: #665075; 
     border: none;
@@ -112,9 +112,36 @@ nav button {
     border-radius: 10px;
 }
 
-.main-content a :hover{
+.main-content .primary-a :hover{
     background-color: #857391;
     cursor: pointer;
+}
+
+.main-content .secondary-a :hover{
+    background-color: #DCDADD;
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+}
+
+.secondary-btn{
+    font-family: "HK-Grotesk";
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 10px;
+
+    background-color: transparent;
+    color: #665075;
+    border-color: #665075;
+    border-style: solid;
 }
 
 .about{
